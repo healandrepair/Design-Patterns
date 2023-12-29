@@ -3,6 +3,8 @@ namespace Singleton;
 // Singleton, define class with an instance of itself that is static and private.
 public class Database
 {
+    // Make field private so it cant be accessed from outside the class.
+    // Make field static ensures that is only 1 instance of this singleton and this is shared across all the Singleton classes
     private static Database _database;
 
     // Private constructor so it cant be instantiated outside of getInstance method.
